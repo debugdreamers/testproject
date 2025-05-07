@@ -12,7 +12,7 @@ const About: React.FC = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="mb-8 grid grid-cols-1 md:grid-cols-3 gap-8">
           <ValueCard 
             icon={<Users className="h-10 w-10 text-secondary-600" />}
             title="Our Team"
@@ -28,7 +28,17 @@ const About: React.FC = () => {
             title="Our Vision"
             description="To be the leading digital partner for businesses seeking growth through technology."
           />
+          
+         
+          
         </div>
+        <div className="mb-12 p-6 bg-primary-50 rounded-lg shadow-md">
+          <blockquote className="italic text-secondary-800 mb-2">
+            "We take pride in our ability to understand the intricate nuances of each business we work with. By blending our technical expertise with a deep understanding of our client's industries, target audiences, and goals, we create tailored solutions that deliver tangible results. Our dedication to client success is reflected in our track record of helping businesses achieve increased brand visibility, higher conversion rates, and sustained growth."
+          </blockquote>
+          <div className="text-right text-secondary-700 font-semibold">Rikesh Karmacharya<br /><span className="font-normal">Co-founder</span></div>
+        </div>
+        
         
         <div className="mt-20 flex flex-col md:flex-row items-center">
           <div className="flex-1 mb-10 md:mb-0 md:pr-12">

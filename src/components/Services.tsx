@@ -8,7 +8,7 @@ const Services: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary-900 mb-4">Our Services</h2>
           <p className="text-lg text-secondary-600 max-w-3xl mx-auto">
-            Our agency values are rooted in collaboration, innovation, and excellence. We believe in forging strong partnerships with our clients, understanding their unique aspirations and translating them into compelling digital solutions.
+            Our agency values are rooted in collaboration, innovation, and excellence. We believe in forging strong partnerships with our clients, understanding their unique aspirations and translating them into compelling digital solutions. Through our relentless pursuit of innovation, we push the boundaries of creativity, staying ahead of emerging trends and technologies to deliver cutting-edge designs.
           </p>
         </div>
         

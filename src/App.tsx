@@ -3,6 +3,8 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
+import Workflow from './components/Workflow';
+import ValueProposition from './components/ValueProposition';
 import Technologies from './components/Technologies';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
@@ -28,7 +30,9 @@ function App() {
       <Hero />
       <About />
       <Services />
-      {/* <Technologies /> */}
+      <Workflow />
+      <ValueProposition />
+      <Technologies />
       <Testimonials />
       <Contact />
       <Footer />

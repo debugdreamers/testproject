@@ -7,31 +7,19 @@ const Technologies: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary-900 mb-4">Technologies We Use</h2>
           <p className="text-lg text-secondary-600 max-w-3xl mx-auto">
-            We leverage cutting-edge technologies to deliver robust, scalable, and efficient solutions.
+            We use modern, proven technologies to deliver robust, scalable, and high-performing digital solutions for our clients.
           </p>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <TechStack
-            title="Frontend Development"
+            title="Web Development"
             technologies={[
               "React.js",
               "Next.js",
-              "Vue.js",
-              "TypeScript",
-              "Tailwind CSS",
-              "Material-UI",
-            ]}
-          />
-          <TechStack
-            title="Backend Development"
-            technologies={[
               "Node.js",
-              "Python",
-              "Django",
-              "Express.js",
               "PostgreSQL",
-              "MongoDB",
+              "TypeScript",
+              "Tailwind CSS"
             ]}
           />
           <TechStack
@@ -39,43 +27,44 @@ const Technologies: React.FC = () => {
             technologies={[
               "React Native",
               "Flutter",
-              "Swift",
-              "Kotlin",
-              "Firebase",
-              "AWS Amplify",
+              "iOS/Swift",
+              "Android/Kotlin"
             ]}
           />
           <TechStack
-            title="DevOps & Cloud"
-            technologies={[
-              "Docker",
-              "Kubernetes",
-              "AWS",
-              "Google Cloud",
-              "CI/CD",
-              "Git",
-            ]}
-          />
-          <TechStack
-            title="CMS & E-commerce"
-            technologies={[
-              "WordPress",
-              "Shopify",
-              "WooCommerce",
-              "Strapi",
-              "Ghost",
-              "Contentful",
-            ]}
-          />
-          <TechStack
-            title="Analytics & Marketing"
+            title="SEO & Analytics"
             technologies={[
               "Google Analytics",
+              "SEMrush",
+              "Ahrefs",
+              "Schema Markup"
+            ]}
+          />
+          <TechStack
+            title="Digital Marketing"
+            technologies={[
+              "Meta Ads",
               "Google Ads",
-              "Meta Pixel",
               "Mailchimp",
-              "HubSpot",
-              "Segment",
+              "HubSpot"
+            ]}
+          />
+          <TechStack
+            title="Conversion Optimization"
+            technologies={[
+              "Hotjar",
+              "Google Optimize",
+              "VWO",
+              "Analytics"
+            ]}
+          />
+          <TechStack
+            title="DevOps & Support"
+            technologies={[
+              "Docker",
+              "CI/CD",
+              "AWS",
+              "Monitoring Tools"
             ]}
           />
         </div>
