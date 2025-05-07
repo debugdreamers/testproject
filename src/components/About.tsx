@@ -44,7 +44,7 @@ const About: React.FC = () => {
           <div className="flex-1 mb-10 md:mb-0 md:pr-12">
             <h3 className="text-2xl md:text-3xl font-bold text-secondary-900 mb-4">Our Story</h3>
             <p className="text-secondary-700 mb-4">
-              Founded in 2025, debugdream began with a simple idea: to make technology accessible and useful 
+              Founded in 2024, debugdream began with a simple idea: to make technology accessible and useful 
               for businesses of all sizes. What started as a small team of three has grown into a thriving 
               company with clients across multiple industries.
             </p>

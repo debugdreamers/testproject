@@ -1,6 +1,23 @@
 import React from 'react';
 import Logo from './Logo';
 
+// Footer navigation links for the Company section
+const companyLinks = [
+  { name: 'About Us', href: '#about' },
+  { name: 'Services', href: '#services' },
+  { name: 'Technologies', href: '#technologies' },
+  { name: 'Testimonials', href: '#testimonials' },
+  { name: 'Contact', href: '#contact' }
+];
+
+const services = [
+  { name: 'Web Development', href: '#services' },
+  { name: 'Mobile App Development', href: '#services' },
+  { name: 'Digital Marketing', href: '#services' },
+  { name: 'SEO & Analytics', href: '#services' },
+  { name: 'Cloud Solutions', href: '#services' }
+];
+
 const Footer: React.FC = () => {
   return (
     <footer className="bg-secondary-900 text-primary-100 py-12">
@@ -9,27 +26,25 @@ const Footer: React.FC = () => {
           <div className="md:col-span-1">
             <Logo />
             <p className="mt-4 text-primary-200">
-              Building innovative digital solutions for businesses since 2025.
+              Building innovative digital solutions for businesses since 2024.
             </p>
           </div>
           
           <div>
             <h4 className="text-lg font-semibold mb-4 text-white">Services</h4>
             <ul className="space-y-2">
-              <FooterLink>Web Development</FooterLink>
-              <FooterLink>Mobile Development</FooterLink>
-              <FooterLink>UI/UX Design</FooterLink>
-              <FooterLink>Cloud Services</FooterLink>
+            {services.map(link => (
+                <FooterLink key={link.name} href={link.href}>{link.name}</FooterLink>
+              ))}
             </ul>
           </div>
           
           <div>
             <h4 className="text-lg font-semibold mb-4 text-white">Company</h4>
             <ul className="space-y-2">
-              <FooterLink>About Us</FooterLink>
-              <FooterLink>Our Team</FooterLink>
-              <FooterLink>Careers</FooterLink>
-              <FooterLink>Contact</FooterLink>
+              {companyLinks.map(link => (
+                <FooterLink key={link.name} href={link.href}>{link.name}</FooterLink>
+              ))}
             </ul>
           </div>
           
@@ -60,13 +75,14 @@ const Footer: React.FC = () => {
 
 interface FooterLinkProps {
   children: React.ReactNode;
+  href?: string;
 }
 
-const FooterLink: React.FC<FooterLinkProps> = ({ children }) => {
+const FooterLink: React.FC<FooterLinkProps> = ({ children, href }) => {
   return (
     <li>
       <a 
-        href="#" 
+        href={href || '#'}
         className="text-primary-300 hover:text-white transition-colors"
       >
         {children}
