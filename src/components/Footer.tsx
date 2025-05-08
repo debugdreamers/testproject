@@ -6,7 +6,7 @@ const companyLinks = [
   { name: 'About Us', href: '#about' },
   { name: 'Services', href: '#services' },
   { name: 'Technologies', href: '#technologies' },
-  { name: 'Testimonials', href: '#testimonials' },
+  // { name: 'Testimonials', href: '#testimonials' },
   { name: 'Contact', href: '#contact' }
 ];
 

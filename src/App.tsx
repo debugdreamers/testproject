@@ -33,7 +33,7 @@ function App() {
       <Workflow />
       <ValueProposition />
       <Technologies />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
       <Footer />
     </div>
